@@ -1,0 +1,1211 @@
+<mvc:View xmlns:table="sap.ui.table" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:chart="sap.chart" xmlns:l="sap.ui.layout" xmlns:smartChart="sap.ui.comp.smartchart" xmlns:viz="sap.viz.ui5.controls" xmlns:viz.data="sap.viz.ui5.data" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" controllerName="solicitudproyect.controller.View1" displayBlock="true">
+
+<App id="app0">
+    <pages><Page id="page0" title="{i18n>appTitle}" class="miClase">
+            <customHeader>
+            <Bar xmlns="sap.m" class="sapContrastPlus myCustomBar" id="bar0" busyIndicatorSize="Large" design="Header">
+                    <contentLeft>
+                        <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Telef%C3%B3nica_2021_logo.svg/1200px-Telef%C3%B3nica_2021_logo.svg.png" width="120px" id="image0"/>
+                    </contentLeft>
+                </Bar>
+            </customHeader>
+        <content>
+        <FlexBox width="100%" id="box0_14728022858">
+                <items>
+                    <Text xmlns="sap.m" text="Comité de Oportunidades " width="300px" class="myText sapUiSmallMargin" id="text9_17147280447"/>
+                </items>
+            </FlexBox>
+        <Panel xmlns="sap.m" width="auto" expandable="true" expanded="true" id="panel1">
+            <headerToolbar>
+                <Toolbar id="toolbar1">
+                    <Title text="Solicitud de proyecto" id="titulo1" class="miTitulo"/>
+                    <ToolbarSpacer id="d"/>
+                    <Button icon="sap-icon://hint" id="btn_1" width="10px" press=".handleInformation"/>
+                    </Toolbar>
+                
+            </headerToolbar>
+            <content>
+                <Text text="Rellenar" id="txt_rellena" class="miTitulo myText2"/>
+                <FlexBox width="100%" id="flx_1">
+                    <items>
+                        <Table ariaLabelledBy="__label0 __label2" noDataText="Drop column list items here and columns in the area above" id="table1" class="sapUiSmallMargin" width="1150px">
+                            <items>
+                                <ColumnListItem type="Active" id="item1">
+                                    <cells>
+                                        <Input xmlns="sap.m" id="input0" placeholder="5524455" liveChange="onInputChange" tooltip="Codigo Proyecto"/>
+                                        <Input xmlns="sap.m" id="input1" placeholder="Proyect...." liveChange="onInputChange" tooltip="Nombre Proyecto"/>
+
+                                     <Select xmlns="sap.m" id="slct_area" selectedKey="{ModeloSelect>/selectKey}" change="onInputChange" forceSelection="false" items="{ModeloSelect>/Area}"> 
+
+                                            <items>
+                                                <core:Item xmlns:core="sap.ui.core" key="ModeloSelect&gt;key" text="{ModeloSelect>text}" id="item155"/>
+                                            </items>
+      
+                                        </Select>
+
+                                        <Select xmlns="sap.m" id="slct_Jefe" selectedKey="{ModeloSelect>/selectKey}" change="onInputChange" forceSelection="false" items="{ModeloSelect>/Jefeproyecto}">
+                                            <items>
+                                                <core:Item xmlns:core="sap.ui.core" key="ModeloSelect&gt;key" text="{ModeloSelect>text}" id="item155p"/>
+                                            </items>
+
+                                        </Select>
+
+                                        <Select xmlns="sap.m" id="slct_verti" selectedKey="{ModeloSelect>/selectKey}" forceSelection="false" items="{ModeloSelect>/Vertical}">
+                                            <items>
+                                                <core:Item xmlns:core="sap.ui.core" key="ModeloSelect&gt;key" text="{ModeloSelect>text}" id="item156"/>
+                                            </items>  
+                                        </Select>
+
+
+                                        <Select xmlns="sap.m" id="slct_clFun" change="onInputChange" selectedKey="{ModeloSelect>/selectKey}" forceSelection="false" items="{ModeloSelect>/clienteFuncional}">
+                                            <items>
+                                                <core:Item xmlns:core="sap.ui.core" key="ModeloSelect&gt;key" text="{ModeloSelect>text}" id="item157"/>
+                                            </items>    
+                                        </Select>
+                                      </cells>
+                                </ColumnListItem>
+                            </items>
+                            <columns>
+                                <Column id="column3" hAlign="Center">
+                                    <header>
+                                        <Label text="Codigo" id="label3"/>
+                                    </header>
+                                </Column>
+                                <Column id="column4" hAlign="Center">
+                                    <header>
+                                        <Label text="Nombre Proyecto" id="label4"/>
+                                    </header>
+                                </Column>
+                                <Column id="column5" hAlign="Center">
+                                    <header>
+                                        <Label text="Area" id="label5"/>
+                                    </header>
+                                </Column>
+
+                                  <Column id="column0" hAlign="Center">
+                                    <header>
+                                        <Label text="Jefe  Proyecto" id="label0"/>
+                                    </header>
+                                </Column>
+                                      <Column id="column1" hAlign="Center">
+                                    <header>
+                                        <Label text="Veritical" id="label1"/>
+                                    </header>
+                                </Column>
+                                <Column id="column2" hAlign="Center">
+                                    <header>
+                                        <Label text="Cliente Funcional" id="label2"/>
+                                    </header>
+                                </Column>
+                            </columns>
+                         </Table>
+            
+                    </items>
+                </FlexBox>
+                <FlexBox width="100%" id="box1">
+                    <items>
+                        <Table ariaLabelledBy="__xmlview0--label4 __label10" noDataText="Drop column list items here and columns in the area above" id="table4" class="sapUiTinyMargin" width="1150px">
+                            <items>
+                                <ColumnListItem type="Active" id="item8">
+                                    <cells>
+                                       
+                                        <Select xmlns="sap.m" id="slct_inic" change="onInputChange" selectedKey="{ModeloSelect>/selectKey}" forceSelection="false" items="{ModeloSelect>/tipoIniciativa}">
+                                            <items>
+                                                <core:Item xmlns:core="sap.ui.core" key="ModeloSelect&gt;key" text="{ModeloSelect>text}" id="item159"/>
+                                            </items>    
+                                            
+                                        </Select>
+                                    
+                                            <Input xmlns="sap.m" id="inputf0" placeholder="Facturacion..." liveChange="onInputChange" tooltip="Facturacion"/>
+                                       
+                                        <Select xmlns="sap.m" id="select1_1714404476527" selectedKey="{ModeloSelect>/selectKey}" forceSelection="false" items="{ModeloSelect>/clienteFuncional}">
+                                              <items>
+                                                <core:Item xmlns:core="sap.ui.core" key="ModeloSelect&gt;key" text="{ModeloSelect>text}" id="item160"/>
+                                            </items>    
+                                            
+                                        </Select>
+                                        <Select xmlns="sap.m" id="select2" selectedKey="{ModeloSelect>/selectKey}" forceSelection="false" items="{ModeloSelect>/seguimiento}">
+                                              <items>
+                                                <core:Item xmlns:core="sap.ui.core" key="ModeloSelect&gt;key" text="{ModeloSelect>text}" id="item161"/>
+                                            </items>
+                                            
+                                        </Select>
+
+                                          <Select xmlns="sap.m" id="select0_171444443429" selectedKey="{ModeloSelect>/selectKey}" forceSelection="false" items="{ModeloSelect>/EjecucionViaNewMo}">
+                                            <items>
+                                                <core:Item xmlns:core="sap.ui.core" key="ModeloSelect&gt;key" text="{ModeloSelect>text}" id="item162"/>
+                                            </items>
+                                            
+                                        </Select>
+
+                                          <Select xmlns="sap.m" id="select0_1716546793764" selectedKey="{ModeloSelect>/selectKey}" forceSelection="false" items="{ModeloSelect>/AMreceptor}">
+
+                                              <items>
+                                                <core:Item xmlns:core="sap.ui.core" key="ModeloSelect&gt;key" text="{ModeloSelect>text}" id="item163"/>
+                                            </items>
+                                          </Select>
+
+
+                                    </cells>
+
+                                </ColumnListItem>
+
+                            </items>
+                            <columns>
+                                <Column id="column12" hAlign="Center">
+                                    <header>
+                                        <Label text="Tipo Iniciativa" id="label12"/>
+                                    </header>
+                                </Column>
+                                <Column id="column13" hAlign="Center">
+                                    <header>
+                                        <Label text="Cliente Facturacion" id="label13"/>
+                                    </header>
+                                </Column>
+                                <Column id="column14" hAlign="Center">
+                                    <header>
+                                        <Label text="Naturaleza3" id="label14"/>
+                                    </header>
+                                </Column>
+                                 <Column id="column9" hAlign="Center">
+                                    <header>
+                                        <Label id="label9" text="Seguimiento"/>
+                                    </header>
+                                </Column>
+                                <Column id="column10" hAlign="Center">
+                                    <header>
+                                        <Label id="label10" text="Ejecucion Via Nuevo Modelo"/>
+                                    </header>
+                                </Column>
+                                <Column id="column11" hAlign="Center">
+                                    <header>
+                                        <Label text="AM receptor" id="label11"/>
+                                    </header>
+                                </Column>
+                            </columns>
+                        </Table>
+                    
+                    </items>
+                </FlexBox>
+                <FlexBox width="100%" id="box0">
+                    <items>
+                        <Table ariaLabelledBy="__label1" noDataText="Drop column list items here and columns in the area above" id="table1_1714405548914" class="sapUiTinyMargin" width="1150px">
+                            <items>
+                                <ColumnListItem type="Active" id="item1_1714405548913">
+
+                                    <cells>
+                                        <CheckBox xmlns="sap.m" text=" " selected="false" id="box_multiJuridica"/>
+                                        <CheckBox xmlns="sap.m" text="" selected="false" id="box_pluriAnual"/>
+                                        <Input xmlns="sap.m" value="" id="input_ipc" placeholder="2,5%"/>
+                            
+                                        <DatePicker xmlns="sap.m" id="date_inico" change="fechasDinamicas"/>
+                                        <DatePicker xmlns="sap.m" id="date_fin" change="fechasDinamicas"/>
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+                            <columns>
+                                <Column id="column3_1714405548913" hAlign="Center">
+                                    <header>
+                                        <Label text="MultiJurida " id="label3_1714405548913"/>
+                                    </header>
+                                </Column>
+                                <Column id="column4_1714405548913" hAlign="Center">
+                                    <header>
+                                        <Label text="PluriAnual" id="label4_1714405548913"/>
+                                    </header>
+                                </Column>
+                                <Column id="column5_1714405548914" hAlign="Center">
+                                    <header>
+                                        <Label text="IPC Aplicable " id="label5_1714405548914"/>
+                                    </header>
+                                </Column>
+                                 <Column id="column0_1714405544374" hAlign="Center">
+                                    <header>
+                                        <Label text="Fecha inicio" id="label0_1714405544374"/>
+                                    </header>
+                                </Column>
+                                <Column id="column1_1714405544375" hAlign="Center">
+                                    <header>
+                                        <Label text="Fecha fin " id="label1_1714405544374"/>
+                                    </header>
+                                </Column>
+                                </columns>
+                            </Table>
+                    </items>
+                </FlexBox>
+            </content>
+            </Panel><Panel xmlns="sap.m" width="auto" expandable="true" expanded="true" id="panel2">
+                <headerToolbar>
+                    <Toolbar id="toolbar2">
+                        <Title text="Planificación " id="titulo_2" class="miTitulo"/>
+                        <ToolbarSpacer id="f"/>
+                        <Button icon="sap-icon://settings" id="btn2"/>
+                        </Toolbar>
+                    
+                </headerToolbar>
+                <content>
+                    <Text text="Fechas planificacion" id="text10_1714468462964" class="sapUiSmallMarginBottom myText2"/>
+                    <FlexBox width="100%" id="box0_1714468536656">
+                        <items>
+                            <Table ariaLabelledBy="__label7" id="table3_1714468867118" class="table1">
+                                <items>
+                                     <ColumnListItem type="Active" id="colum01">
+                                        <cells>
+                                            <Text text="kick off " id="txt_kic"/>
+                                              <DatePicker xmlns="sap.m" id="dte_Ikick" valueFormat="yyyy-MM-dd" displayFormat="dd/MM/yyyy" change="onSavedDate"/>
+                                               <DatePicker xmlns="sap.m" id="dte_finkic" valueFormat="yyyy-MM-dd" displayFormat="dd/MM/yyyy" change="onSavedDate"/>
+                                    
+                                        </cells>
+                                    </ColumnListItem>
+                                  <ColumnListItem type="Active" id="colum2">
+                                        <cells>
+                                            <Text text="Diseño " id="txt_diseno"/>
+                                              <DatePicker xmlns="sap.m" id="dte_Idiseno" valueFormat="yyyy-MM-dd" displayFormat="dd/MM/yyyy" change=".onSavedDate"/>
+                                               <DatePicker xmlns="sap.m" id="dte_findise" valueFormat="yyyy-MM-dd" displayFormat="dd/MM/yyyy" change="onSavedDate"/>
+                                    
+                                        </cells>
+                                    </ColumnListItem>
+
+                                    <ColumnListItem type="Active" id="colum3">
+                                        <cells>
+                                            <Text text="Construcion " id="txt_contruc"/>
+                                            <DatePicker xmlns="sap.m" id="dte_Iconstruc" valueFormat="yyyy-MM-dd" displayFormat="dd/MM/yyyy" change=".onSavedDate"/>
+                                            <DatePicker xmlns="sap.m" id="dte_Fconstruc" valueFormat="yyyy-MM-dd" displayFormat="dd/MM/yyyy" change=".onSavedDate"/>
+                                            </cells>
+                                    </ColumnListItem>
+
+                                    <ColumnListItem type="Active" id="colum4">
+                                        <cells>
+                                            <Text text="Pruebas TQ" id="txt_pruebas"/>
+                                            <DatePicker xmlns="sap.m" id="dte_Ipruba" valueFormat="yyyy-MM-dd" displayFormat="dd/MM/yyyy" change=".onSavedDate"/>
+                                            <DatePicker xmlns="sap.m" id="dte_Fpruba" valueFormat="yyyy-MM-dd" displayFormat="dd/MM/yyyy" change=".onSavedDate"/>
+                                        </cells>
+                                    </ColumnListItem>
+
+                                    <ColumnListItem type="Active" id="colum5">
+                                        <cells>
+                                            <Text text="Go live" id="txt_live"/>
+                                            <DatePicker xmlns="sap.m" id="dte_Ilive" valueFormat="yyyy-MM-dd" displayFormat="dd/MM/yyyy" change=".onSavedDate"/>
+                                            <DatePicker xmlns="sap.m" id="dte_Flive" valueFormat="yyyy-MM-dd" displayFormat="dd/MM/yyyy" change=".onSavedDate"/>
+                                        </cells>
+                                    </ColumnListItem>
+
+                                     <ColumnListItem type="Active" id="colum6">
+                                        <cells>
+                                            <Text text="Paso AM" id="txt_pasoAM"/>
+                                            <DatePicker xmlns="sap.m" id="dte_IpasAM" valueFormat="yyyy-MM-dd" displayFormat="dd/MM/yyyy" change=".onSavedDate"/>
+                                            <DatePicker xmlns="sap.m" id="dte_FpasAM" valueFormat="yyyy-MM-dd" displayFormat="dd/MM/yyyy" change=".onSavedDate"/>
+                                        </cells>
+                                    </ColumnListItem>
+
+                                     <ColumnListItem type="Active" id="colum7">
+                                        <cells>
+                                            <Text text="Server post/prod" id="txt_post"/>
+                                            <DatePicker xmlns="sap.m" id="dte_Ipost" valueFormat="yyyy-MM-dd" displayFormat="dd/MM/yyyy" change=".onSavedDate"/>
+                                        <DatePicker xmlns="sap.m" id="dte_Fpost" valueFormat="yyyy-MM-dd" displayFormat="dd/MM/yyyy" change=".onSavedDate"/>
+                                        </cells>
+                                    </ColumnListItem>
+
+                                </items>
+                                <columns>
+                                    <Column id="column9_1714468867115">
+                                        <header>
+                                            <Label text="Hito/Fase" id="label9_1714468867114"/>
+                                        </header>
+                                    </Column>
+                                    <Column id="column10_1714468867116">
+                                        <header>
+                                            <Label text="Fecha Inicio " id="label10_1714468867116"/>
+                                        </header>
+                                    </Column>
+                                    <Column id="column11_1714468867118">
+                                        <header>
+                                            <Label text="Fecha FIn " id="label11_1714468867117"/>
+                                        </header>
+                                    </Column></columns></Table>
+                                    
+                            <Table noDataText="Drop column list items here and columns in the area above" id="table2" class="sapUiSmallMargin">
+                                <items><ColumnListItem type="Active" id="colum1">
+                                        <cells>
+                                            <Input xmlns="sap.m" value="" id="input0_1715699099325"/>
+                                            <Input xmlns="sap.m" value="" id="input1_1715699107606"/>
+                                            <Text text="Proveedor1" id="txt_provee1"/>
+                                          
+                                        </cells>
+                                    </ColumnListItem>
+
+                                    <ColumnListItem type="Active" id="colum8">
+                                        <cells>
+                                            <Input xmlns="sap.m" value="" id="input1_1715857490562"/>
+                                            <Input xmlns="sap.m" value="" id="input0_1715857487569"/>
+                                            <Text xmlns="sap.m" text="" id="text9_1715699142758"/>
+        
+                                            </cells>
+                                    </ColumnListItem>
+
+                                    <ColumnListItem type="Active" id="colum9">
+                                        <cells>
+                                            <Input xmlns="sap.m" value="" id="input2" change="onInputChange"/>
+                                            <Input xmlns="sap.m" value="" id="input4" change="onInputChange"/>
+                                            <Input xmlns="sap.m" value="" id="input3" change="onInputChange"/>
+                                            
+                                        </cells>
+                                    </ColumnListItem>
+
+                    
+                                     <ColumnListItem type="Active" id="colum10">
+                                        <cells>
+                                            <Input xmlns="sap.m" value="" type="Text" id="input5" change="onInputChange"/>
+                                            <Input xmlns="sap.m" value="" id="input7" change="onInputChange"/>                                        
+                                            <Input xmlns="sap.m" value="" id="input6" change="onInputChange"/>
+                                        </cells>
+                                    </ColumnListItem>
+
+
+                                </items>
+                                <columns>
+                                    <Column id="column6">
+                                    <header>
+                                        <CheckBox xmlns="sap.m" text="Condicionado " selected="false" id="box_condi" select="onSelectCheckbox"/>
+                                    </header>
+                                    </Column>
+                                    <Column id="column7">
+                                    <header>
+                                        <CheckBox xmlns="sap.m" text="Proveedor RF " selected="false" id="box_prove" select="onSelectCheckbox"/>
+                                    </header>
+                                    </Column></columns></Table>
+
+                                    
+                        </items>  
+ <!-- <viz:VizFrame id="idVizFrame" uiConfig="{applicationSet:'fiori'}" vizType="timeseries_gantt">
+                <viz:dataset>
+                    <viz.data:FlattenedDataset id="hola" data="{smartDatos>/dates}">
+                        <viz.data:dimensions>
+                            <viz.data:DimensionDefinition id="hol" name="Hito" value="{smartDatos>hito}" />
+                        </viz.data:dimensions>
+                        <viz.data:measures>
+                            <viz.data:MeasureDefinition  id="hla" name="Fecha Inicio" value="{smartDatos>fechaInicio}" />
+                            <viz.data:MeasureDefinition id="h" name="Fecha Fin" value="{smartDatos>fechaFin}" />
+                        </viz.data:measures>
+                    </viz.data:FlattenedDataset>
+                </viz:dataset>
+                <viz:feeds>
+           <viz.feeds:FeedItem id="55" uid="categoryAxis" type="Dimension" values="hhh" />
+
+                </viz:feeds>
+            </viz:VizFrame> -->
+               
+                    </FlexBox>
+                    
+                    <FlexBox width="100%" id="box0_1714472600967">
+                        <items>
+                            <Table noDataText="Drop column list items here and columns in the area above" id="table0_1714472906427" class="sapUiSmallMargin" width="400px">
+                        <items>
+                            <ColumnListItem type="Active" id="item0_1714472906426">
+                                <cells>
+                                    <Text id="text9" text="Plan"/>
+                                    <Text text="04/04/2023" id="text10"/>
+                                    <Text text="14/09/2024" id="text11"/></cells>
+                            </ColumnListItem>
+                        </items>
+                        <columns>
+                            <Column id="column0_1714472906426" class="sapUiSmallMarginBottom">
+                                <header>
+                                    <Label text="Hito/Fase" id="label0_1714472906426"/>
+                                </header>
+                            </Column>
+                            <Column id="column1_1714472906427">
+                                <header>
+                                    <Label text="Fecha Inicio " id="label1_1714472906427"/>
+                                </header>
+                            </Column>
+                            <Column id="column2_1714472906427">
+                                <header>
+                                    <Label text="Fecha Fin " id="label2_1714472906427"/>
+                                </header>
+                            </Column>
+                        </columns></Table>
+                        </items>
+                    </FlexBox>
+                    </content>
+                </Panel>
+                
+            <Panel xmlns="sap.m" width="auto" expandable="true" expanded="true" id="panel3">
+                <headerToolbar>
+                    <Toolbar id="toolbar1_1714475868856">
+                        <Title text="Objetivos" id="titu" class="miTitulo"/>
+                        <ToolbarSpacer id="ddd"/>
+                        <Button icon="sap-icon://settings" id="btn_3"/>
+                        </Toolbar>
+                    
+                </headerToolbar>
+                <content>
+                <Text text="Panel Content" id="text9_1714475868856"/>
+                   
+                    <FlexBox width="100%" id="box0_1714476532308">
+                        <items>
+                            <Text xmlns="sap.m" text="Objectivo y Alcance" id="text9_1714476556932" class="sapUiSmallMargin"/>
+                            <TextArea xmlns="sap.m" placeholder="Escribe aquí..." id="area0_1714484681199" rows="4" cols="60"/>
+                        </items>
+
+                         <items>
+                            <Text xmlns="sap.m" text="Asunciones y Restricciones" id="s" class="sapUiSmallMargin"/>
+                            <TextArea xmlns="sap.m" placeholder="Escribe aquí..." id="area0_s1714484681199" rows="4" cols="60"/>
+                        </items>
+                    </FlexBox>
+                   
+                    <FlexBox width="100%" id="box0_1714486261986">
+                   
+                    <items>
+
+                
+                    <l:VerticalLayout width="100%" id="gfdg" class="sapUiLargeMarginTop">
+                                <Label text="Facturación Proyecto/ &#10;Servicio Cliente Externo" wrapping="true" id="lbl_recu" textAlign="Center" class="myText3"/>
+                              <!-- <Label text="Columna 2" id="hdghh"/>-->  
+                        
+                     </l:VerticalLayout>
+
+                    <Table noDataText="Drop column list items here and columns in the area above" id="table0" class="sapUiSmallMargin" width="600px">
+
+                        <items>
+
+                            <ColumnListItem type="Active" id="item0_1718882030913">
+
+                                <cells>
+
+                                    <Input xmlns="sap.m" value="Value" id="input0_1718884507993"/>
+
+                                    <Input xmlns="sap.m" value="Value" id="input6_1718884539620"/>
+
+                                    <Input xmlns="sap.m" value="Value" id="input8"/>
+
+                                </cells>
+
+                            </ColumnListItem>
+
+                            <ColumnListItem type="Active" id="ite">
+
+                                <cells>
+
+                                    <Input xmlns="sap.m" value="Value" id="input1_1718884511058"/>
+
+                                    <Input xmlns="sap.m" value="Value" id="input5_1718884535732"/>
+
+                                    <Input xmlns="sap.m" value="Value" id="input11"/>
+
+                                    <Input xmlns="sap.m" value="Value" id="input4_1718884530459"/>
+
+                               
+                                </cells>
+
+                            </ColumnListItem>
+
+                            <ColumnListItem id="item0_1718884640237">
+
+                                <cells>
+
+                                    <Input xmlns="sap.m" value="Value" id="input6_1718884699153"/>
+
+                                    <Input xmlns="sap.m" value="Value" id="input3_1718884677565"/>
+
+                                    <Input xmlns="sap.m" value="Value" id="input1_1718884666668"/>
+
+                                </cells>
+
+                            </ColumnListItem>
+
+                            <ColumnListItem id="item1_1718884655263">
+
+                                <cells>
+
+                                    <Input xmlns="sap.m" value="Value" id="input2_1718884671366"/>
+
+                                    <Input xmlns="sap.m" value="Value" id="input4_1718884681583"/>
+
+                                    <Input xmlns="sap.m" value="Value" id="input7_1718884705972"/>
+
+                                </cells>
+
+                            </ColumnListItem>
+
+                            <ColumnListItem type="Active" id="itefttt">
+
+                                <cells>
+
+                                    <Input xmlns="sap.m" value="Value" id="input2_1718884515836"/>
+
+                                    <Input xmlns="sap.m" value="Value" id="input3_1718884526227"/>
+
+                                    <Input xmlns="sap.m" value="Value" id="input0_1718884628484"/>
+
+                   
+                                </cells>
+
+                            </ColumnListItem>
+                            
+
+
+
+                        </items>
+
+                        <columns>
+
+                            <Column id="column0_1718882030913">
+
+                                <header>
+
+                                    <Label text="Header 1" id="label0_1718882030913"/>
+
+                                </header>
+
+                            </Column>
+
+                            <Column id="column1_1718882030914">
+
+                                <header>
+
+                                    <Label text="Header 2" id="label1_1718882030913"/>
+
+                                </header>
+
+                            </Column>
+
+                            <Column id="column2_1718882030914">
+
+                                <header>
+
+                                    <Label text="Header 3" id="label2_1718882030914"/>
+
+                                </header>
+
+                            </Column>
+                          
+                            
+                            </columns>
+                            
+                            
+                            </Table>
+                   
+                  
+    
+                   
+                    </items>
+                   
+                    </FlexBox>
+                    
+                    
+                </content>
+                </Panel>
+            <FlexBox width="100%" id="box0_1714728022858">
+                <items>
+                    <Text xmlns="sap.m" text="Costes Mensualisados " width="200px" class="myText sapUiSmallMargin " id="text9_1714728041247"/>
+                </items>
+            </FlexBox><Panel xmlns="sap.m" width="auto" expandable="true" expanded="true" id="panel4">
+                <headerToolbar>
+                    <Toolbar id="toolbar1_1714730282344">
+                        <Title text="Comité de Oportunidades" id="titulo4" class="miTitulo"/>
+                        <ToolbarSpacer id="t"/>
+                        <Button icon="sap-icon://settings" id="btn_des"/>
+                        </Toolbar>
+                    
+                </headerToolbar>
+                <content>
+                    <Text text="Comité de Oportunidades" id="text9_1714730282344" class="sapUiSmallMargin myText2"/>
+                    <FlexBox width="100%" id="box0_1714732707799">
+                        <items>
+                            <Table noDataText="Drop column list items here and columns in the area above" id="tabla_datos" class="sapUiMediumMargin" width="1000px">
+                                <items>
+                                    <ColumnListItem type="Active" id="item0_1714732717715">
+                                        <cells>
+                                            <Text text="" id="txt_ini"/>
+                                            <Text text="" id="txt_funcio"/>
+                                            <Text text="" id="txt_codig"/>
+                                            <Text text="" id="txt_nomPro"/>
+                                            <Text text="" id="txt_area"/>
+                                            <Text text="" id="txt_NomJefe"/>
+                                            <Text text="" id="txt_feIni"/>
+                                            <Text text="" id="txt_feFin"/>
+                                            
+                                        </cells>
+                                    </ColumnListItem>
+                                    
+                                </items>
+                                <columns>
+                                    <Column id="column0_1714732717716">
+                                        <header>
+                                            <Text text="Iniciativa " id="label0_1714732717716" class=".myText2"/>
+                                        </header>
+                                    </Column>
+                                    <Column id="column1_1714732717716">
+                                        <header>
+                                            <Label text="Cliente Funcional " id="label1_1714732717716" class=".myText2"/>
+                                        </header>
+                                    </Column>
+                                    <Column id="column2_1714732717716">
+                                        <header>
+                                            <Label text="Codigo" id="label2_1714732717716" class=".myText2" />
+                                        </header>
+                                    </Column>
+                                </columns>
+                                   
+
+                            <columns>
+                                    <Column id="column0_1714732h717716">
+                                        <header>
+                                            <Label text="Nombre Proyecto" id="label0_171r4732717716" class=".myText2"/>
+                                        </header>
+                                    </Column>
+                                    <Column id="column1_171473s2717716">
+                                        <header>
+                                            <Label text="Area" id="label1_17147s32717716" class=".myText2"/>
+                                        </header>
+                                    </Column>
+                                    <Column id="column2_171w4732717716">
+                                        <header>
+                                            <Label text="Jefe de Proyecto" id="label2_171sw4732717716" class=".myText2"/>
+                                        </header>
+                                    </Column>
+                                </columns>
+
+
+                                <columns>
+                                    <Column id="column0_171473717716">
+                                        <header>
+                                            <Label text="Fecha Inicio " id="label0_171r47717716" class=".myText2"/>
+                                        </header>
+                                    </Column>
+                                    <Column id="column1_171473s27716">
+                                        <header>
+                                            <Label text="Fecha Fin " id="label1_177s32717716" class=".myText2"/>
+                                        </header>
+                                    </Column>
+                                
+                                </columns>
+                             </Table>
+                        </items>
+                    </FlexBox>
+                    <FlexBox width="100%" id="box0_1714747137718" direction="Row"
+    alignItems="Start"
+    justifyContent="Start"
+    fitContainer="true"
+    class="sapUiTinyMargin">
+                        <items>
+                  
+                       <l:VerticalLayout width="100%" id="gfdgdf" class="sapUiTinyMargin">
+                                <Label text="Recursos internor " id="lbl_recurso" textAlign="Center"/>
+                              <!-- <Label text="Columna 2" id="hdghh"/>-->  
+                        
+                     </l:VerticalLayout>
+                     
+
+         
+           <Table noDataText="Drop column list items here and columns in the area above" id="table_dimicFecha"  width="2300px">
+                     
+                <items>
+            
+                    <ColumnListItem type="Active" id="item1_174747617887">
+            
+                        <cells>
+            
+                            <Select xmlns="sap.m" id="selec0">
+            
+                                <items>
+            
+                                    <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Item Text One" id="item0_1716637548"/>
+            
+                                    <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Item Text Two" id="item1_17162887548"/>
+            
+                                </items>
+            
+                                
+            
+                            </Select>
+            
+                            <Select xmlns="sap.m" id="select0_17163029264">
+
+                                    <items>
+                
+                                        <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Item Text One" id="item"/>
+                
+                                        <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Item Text Two" id="item1_6302926132"/>
+                
+                                        </items>
+                
+                                    
+                
+                                </Select>
+                
+                                <Select xmlns="sap.m" id="selct1">
+                
+                                    <items>
+                
+                                        <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Item Text One" id="item2_17163029386"/>
+                
+                                        <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Item Text Two" id="item3_1716303086"/>
+                
+                                        </items>
+                
+                                    
+                
+                                </Select>
+                
+                                <Input xmlns="sap.m" value="Value" id="input0_2958934"/>
+                
+                                <Text xmlns="sap.m" text="Text" id="text25"/>
+                                <Text xmlns="sap.m" text="Text" id="text26"/>
+                                <Text xmlns="sap.m" text="Text" id="text27"/>
+                                <Text xmlns="sap.m" text="Text" id="text28"/>
+                                <Text xmlns="sap.m" text="Text" id="text29"/>
+                                <Text xmlns="sap.m" text="Text" id="text30"/>
+                                <Text xmlns="sap.m" text="Text" id="text31"/>
+                                <Text xmlns="sap.m" text="Text" id="text32"/>
+                                <Text xmlns="sap.m" text="Text" id="text33"/>
+
+
+                            </cells>
+                
+                        </ColumnListItem>
+                    
+                <ColumnListItem type="Active" id="item1_1714747617887">
+                
+                            <cells>
+                
+                                <Select xmlns="sap.m" id="select0">
+                
+                                    <items>
+                
+                                        <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Item Text One" id="item0_1716288637548"/>
+                
+                                        <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Item Text Two" id="item1_1716288637548"/>
+                
+                                    </items>
+                
+                                    
+                
+                                </Select>
+                
+                                <Select xmlns="sap.m" id="select0_1716302926134">
+                
+                                    <items>
+                
+                                        <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Item Text One" id="item0"/>
+                
+                                        <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Item Text Two" id="item1_1716302926132"/>
+                
+                                        </items>
+                
+                                    
+                
+                                </Select>
+                
+                                <Select xmlns="sap.m" id="select1">
+                
+                                    <items>
+                
+                                        <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Item Text One" id="item2_1716302933086"/>
+                
+                                        <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Item Text Two" id="item3_1716302933086"/>
+                
+                                        </items>
+                
+                                    
+                
+                                </Select>
+                
+                                <Input xmlns="sap.m" value="Value" id="input0_1716302958934"/>
+                
+                                <Text xmlns="sap.m" text="Text" id="text15"/>
+                                <Text xmlns="sap.m" text="Text" id="text16"/>
+                                <Text xmlns="sap.m" text="Text" id="text17"/>
+                                <Text xmlns="sap.m" text="Text" id="text18"/>
+                                <Text xmlns="sap.m" text="Text" id="text32_1716304790843"/>
+                                <Text xmlns="sap.m" text="Text" id="text19"/>
+                                <Text xmlns="sap.m" text="Text" id="text21"/>
+                                <Text xmlns="sap.m" text="Text" id="text22"/>
+                                <Text xmlns="sap.m" text="Text" id="text23"/>
+                                <Text xmlns="sap.m" text="Text" id="text24"/>
+
+
+                            </cells>
+                
+                        </ColumnListItem>
+                          
+
+                <ColumnListItem id="item2_1716304681518">
+                    
+                    <cells>
+                    
+                        <Select xmlns="sap.m" id="select2_1716304697862">
+                    
+                            <items>
+                    
+                                <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Item Text One" id="item5_1716304697859"/>
+                    
+                                <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Item Text Two" id="item6"/>
+                    
+                                </items>
+                    
+                            
+                        </Select>
+                    
+                        <Select xmlns="sap.m" id="select1_1716304692895">
+                    
+                            <items>
+                    
+                                <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Item Text One" id="item3_1716304692891"/>
+                    
+                                <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Item Text Two" id="item4_1716304692893"/>
+                    
+                                </items>
+                    
+                            
+                    
+                        </Select>
+                    
+                        <Select xmlns="sap.m" id="select3">
+                    
+                            <items>
+                    
+                                <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Item Text One" id="item7"/>
+                    
+                                <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Item Text Two" id="item8_1716304701766"/>
+                    
+                                </items>
+                    
+                            
+                    
+                        </Select>
+                    
+                        <Input xmlns="sap.m" value="Value" id="input0_1716304720401"/>
+                    
+                        <Text xmlns="sap.m" text="Text" id="text24_1716304745653"/>
+                    
+                        <Text xmlns="sap.m" text="Text" id="text26_1716304771323"/>
+                    
+                        <Text xmlns="sap.m" text="Text" id="text27_1716304774002"/>
+                    
+                        <Text xmlns="sap.m" text="Text" id="text33_1716304796312"/>
+                    
+                        <Text xmlns="sap.m" text="Text" id="text28_1716304777953"/>
+                    
+                        <Text xmlns="sap.m" text="Text" id="text29_1716304783642"/>
+                    
+                        <Text xmlns="sap.m" text="Text" id="text30_1716304786565"/>
+                    
+                        <Text xmlns="sap.m" text="Text" id="text31_1716304788890"/>
+                    
+                        <Text xmlns="sap.m" text="Text" id="text18_1716304835537"/>
+                    
+                    </cells>
+                    
+                </ColumnListItem>
+                    
+                <ColumnListItem id="item0_1716305003126">
+                    
+                    <cells>
+                    
+                        <Select xmlns="sap.m" id="select1_1716305023237">
+                    
+                            <items>
+                    
+                                <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Item Text One" id="item3_1716305023235"/>
+                    
+                                <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Item Text Two" id="item4_1716305023235"/>
+                    
+                                </items>
+                    
+                            
+                    
+                        </Select>
+                    
+                        <Select xmlns="sap.m" id="select0_1716305016929">
+                    
+                            <items>
+                    
+                                <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Item Text One" id="item1_1716305016927"/>
+                    
+                                <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Item Text Two" id="item2_1716305016927"/>
+                    
+                                </items>
+                    
+                            
+                    
+                        </Select>
+                    
+                        <Select xmlns="sap.m" id="select2_1716305030681">
+                    
+                            <items>
+                    
+                                <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Item Text One" id="item5_1716305030679"/>
+                    
+                                <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Item Text Two" id="item6_1716305030680"/>
+                    
+                                </items>
+                    
+                            
+                    
+                        </Select>
+                    
+                        <Input xmlns="sap.m" value="Value" id="input0_1716305042142"/>
+                    
+                        <Text xmlns="sap.m" text="" id="text22_1716305054167"/>
+                    
+                        <Text xmlns="sap.m" text="" id="text23_1716305057778"/>
+                    
+                        <Text xmlns="sap.m" text="" id="text24_1716305061874"/>
+                    
+                        <Text xmlns="sap.m" text="" id="text25_1716305068189"/>
+                    
+                        <Text xmlns="sap.m" text="" id="text26_1716305070703"/>
+                    
+                        <Text xmlns="sap.m" text="" id="text27_1716305073929"/>
+                    
+                        <Text xmlns="sap.m" text="" id="text28_1716305078959"/>
+                    
+                        <Text xmlns="sap.m" text="" id="text29_1716305081443"/>
+                    
+                        <Text xmlns="sap.m" text="" id="text30_1716305083742"/>
+                    
+                    </cells>
+                    
+                </ColumnListItem>
+                    
+                    
+                <ColumnListItem id="item4_1716372849260" busyIndicatorSize="Auto">
+                    
+                    <cells>
+                    
+                            <Text xmlns="sap.m" text="Otros gastos" id="text28_171630078959" width="auto"/>
+                    </cells>
+                    
+                </ColumnListItem>
+                    
+                <ColumnListItem id="item0_1716376115853">
+                    
+                    <cells>
+                    
+                        <Select xmlns="sap.m" id="select1_1716378700065">
+                    
+                            <items>
+                    
+                                <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Item Text One" id="item2_1716378700065"/>
+                    
+                                <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Item Text Two" id="item3_1716378700065"/>
+                    
+                                </items>
+                    
+                            
+                    
+                        </Select>
+                    
+                        <Select xmlns="sap.m" id="select0_1716378695216">
+                    
+                            <items>
+                    
+                                <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Item Text One" id="item0_1716378695214"/>
+                    
+                                <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Item Text Two" id="item1_1716378695214"/>
+                    
+                                </items>
+                    
+                            
+                    
+                        </Select>
+                    
+                        <Select xmlns="sap.m" id="select2_1716378709477">
+                    
+                            <items>
+                    
+                                <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="Item Text One" id="item4_1716378709476"/>
+                    
+                                <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Item Text Two" id="item5_1716378709476"/>
+                    
+                                </items>
+                    
+                            
+                    
+                        </Select>
+                    
+                        <Input xmlns="sap.m" value="Value" id="input0_1716378718545"/>
+                    
+                        <Text xmlns="sap.m" text="Text" id="text24_1716378725975"/>
+                    
+                        <Text xmlns="sap.m" text="Text" id="text25_1716378732699"/>
+                    
+                        <Text xmlns="sap.m" text="Text" id="text26_1716378736906"/>
+                    
+                        <Text xmlns="sap.m" text="Text" id="text27_1716378741902"/>
+                    
+                        <Text xmlns="sap.m" text="Text" id="text28_1716378748545"/>
+                    
+                        <Text xmlns="sap.m" text="Text" id="text29_1716378751821"/>
+                    
+                        <Text xmlns="sap.m" text="Text" id="text30_1716378754668"/>
+                    
+                        <Text xmlns="sap.m" text="Text" id="text31_1716378757988"/>
+                    
+                        <Text xmlns="sap.m" text="Text" id="text32_1716378762555"/>
+                    
+                    
+                    </cells>
+                    
+                </ColumnListItem>
+                        
+
+                    </items>
+
+                
+                    <columns>
+                
+                        <Column id="column3_1714747617887" >
+                            
+                            <header>
+                
+                                <Label text="Vertical" id="lbl_ver"/>
+                
+                            </header>
+                    
+                        </Column>
+                
+                        <Column id="column4_1714747617887">
+                
+                            <header>
+                
+                                <Label text="Tipo Servicio" id="lbl_tipoSe"/>
+                
+                            </header>
+                
+                        </Column>
+                
+                        <Column id="column5_1714747617888" vAlign="Bottom">
+                
+                            <header>
+                
+                                <Label text="Perfil/Servicio" id="lbl_perSer"/>
+                
+                            </header>
+                
+                        </Column>
+
+                            <Column id="column5_171461788" vAlign="Bottom">
+                
+                            <header>
+                
+                                <Label text="Concepto Oferta" id="lbl_conOfer"/>
+                
+                            </header>
+                
+                        </Column>
+
+
+                            <Column id="column5_17476188" vAlign="Bottom">
+                
+                            <header>
+                
+                                <Label text="PMJ" id="lbl_pmj"/>
+                
+                            </header>
+                
+                        </Column>
+
+                            <Column id="column5_1476188" vAlign="Bottom">
+                
+                            <header>
+                
+                                <Label text="2024" id="anio1"/>
+                
+                            </header>
+                
+                        </Column>
+
+                        <Column id="column5_76188" vAlign="Bottom">
+                
+                            <header>
+                
+                                <Label text="2025" id="anio2"/>
+                
+                            </header>
+                
+                        </Column>
+
+                        <Column id="column5_7688" vAlign="Bottom">
+                
+                            <header>
+                
+                                <Label text="2026" id="anio3"/>
+                
+                            </header>
+                
+                        </Column>
+                        <Column id="column5_768" vAlign="Bottom">
+                
+                            <header>
+                
+                                <Label text="2027" id="anio4"/>
+                
+                            </header>
+                
+                        </Column>
+                        <Column id="column5_788" vAlign="Bottom">
+                
+                            <header>
+                
+                                <Label text="2028" id="anio5"/>
+                
+                            </header>
+                
+                        </Column>
+                        <Column id="column5_76" vAlign="Bottom">
+                
+                            <header>
+                
+                                <Label text="2029" id="anio6"/>
+                
+                            </header>
+                
+                        </Column>
+                        <Column id="column5_78" vAlign="Bottom">
+                
+                            <header>
+                
+                                <Label text="Total" id="lbl_total"/>
+                
+                            </header>
+                
+                        </Column>
+                        <Column id="column5_8" vAlign="Bottom">
+                
+                            <header>
+                
+                                <Label text="Total1" id="total_1"/>
+                
+                            </header>
+                
+                        </Column>
+                        
+                        </columns>
+
+                    </Table>
+                          
+                        </items>
+
+
+                    </FlexBox>
+                
+                </content> 
+
+                </Panel>
+
+        </content>
+        	<footer>
+			<Toolbar id="pie_pag" class="myCustomBar">
+				<ToolbarSpacer id="tol"/>
+				<Button text="Limpiar" id="clear" press="onClearAllData"/>
+                <Button type="Emphasized" text="Enviar" id="button0" press="onSubmit"/>
+                
+			
+			</Toolbar>
+		</footer>
+        </Page></pages>
+</App>
+</mvc:View>

@@ -1,0 +1,66 @@
+/* Enter your custom styles here */
+
+.myCustomBar {
+    background-color: rgb(54, 118, 161); /* Cambia esto por el color que desees */
+}
+
+.miTitulo {
+    color: #031A34; /* Cambia a tu color preferido (azul en este caso) */
+}
+
+.myTextClass {
+    white-space: pre-line;
+    text-align: center; /* Si quieres que el texto esté centrado */
+}
+
+.myText {
+    font-size: 20px; /* Tamaño del texto en píxeles */
+    color: #0066FF;
+}
+.myText2 {
+  
+    color: #0066FF;
+}
+.myText3 {
+  
+    color: #78a6eb;
+}
+.myLabel{
+    font-size: 16px; /* Tamaño del texto en píxeles */
+}
+
+.mySpacing {
+    margin-bottom: 1000px; /* Ajusta el valor para el espacio que necesites */
+}
+.cityInput .sapMInputBaseInner {
+    border: 0px solid #a8bd3e;
+  
+}
+
+
+
+.colorBar{
+    background-color: #F2F4FF;
+
+}
+.my-element {
+    max-width: -moz-fit-content; /* Para Firefox */
+    max-width: fit-content; /* Para otros navegadores compatibles */
+}
+
+.myCustomBar {
+    background-color: #F2F4FF  !important; /* Cambia esto por el color que desees */
+  
+}
+
+
+
+.miClase {
+
+  background-color: white;
+
+};
+
+
+
+

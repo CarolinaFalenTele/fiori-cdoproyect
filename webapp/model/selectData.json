@@ -1,0 +1,290 @@
+{
+    "ShipName": "",
+    "selectKey": "",
+    "Area": [
+        {
+            "key": " ",
+            "text": " "
+        },
+       
+        {
+            "key": "Arquitectura y Tecnología",
+            "text": "Arquitectura y Tecnología"
+        },
+        {
+            "key": "Control TGT",
+            "text": "Control TGT"
+        },
+        {
+            "key": "Finanzas y Supply Chain",
+            "text": "Finanzas y Supply Chain"
+        },
+        {
+            "key": "Gestión Sistemas TSA",
+            "text": "Gestión Sistemas TSA"
+        },
+        {
+            "key": "Recursos Humanos TGT",
+            "text": "Recursos Humanos TGT"
+        },
+        {
+            "key": "Seguridad",
+            "text": "Seguridad"
+        },
+        {
+            "key": "Aplicaciones Globales B2B & BI",
+            "text": "Aplicaciones Globales B2B & BI"
+        },
+        {
+            "key": "Tesorería, Mercados y CDG",
+            "text": "Tesorería, Mercados y CDG"
+        },
+        {
+            "key": "Servicios Clientes B2B - PMO",
+            "text": "Servicios Clientes B2B - PMO"
+        },
+        {
+            "key": "Tesorería, Mercados y CDG",
+            "text": "Tesorería, Mercados y CDG"
+        }
+
+    ],
+
+    "Jefeproyecto": [
+        {
+            "key": " ",
+            "text": " "
+        },
+        {
+            "key": "Nerea de Andres Raso",
+            "text": "Nerea de Andres Raso"
+        },
+        {
+            "key": "Noelia Manzaneque González",
+            "text": "Noelia Manzaneque González"
+        },
+        {
+            "key": "Pablo Fernando Espiño",
+            "text": "Pablo Fernando Espiño"
+        },
+        {
+            "key": "Alberto De Juan",
+            "text": "Alberto De Juan"
+        },
+        {
+            "key": "Alberto Moral del Valle",
+            "text": "Alberto Moral del Valle"
+        },
+        {
+            "key": "Alicia Sánchez-Manjavacas",
+            "text": "Alicia Sánchez-Manjavacas"
+        },
+        {
+            "key": "Álvaro Luelmo Del Castillo",
+            "text": "Álvaro Luelmo Del Castillo"
+        },
+        {
+            "key": "Álvaro Rico Sánchez",
+            "text": "Álvaro Rico Sánchez"
+        },
+        {
+            "key": "Antonio Nogar Carrascoo",
+            "text": "Antonio Nogar Carrasco"
+        },
+        {
+            "key": "Borja Sandar Rivas",
+            "text": "Borja Sandar Rivas"
+        }
+
+
+    ],
+
+    "Vertical":[
+        {
+            "key": " ",
+            "text": " "
+        },
+        {
+            "key": "BMC",
+            "text": "BMC"
+        },
+        {
+            "key": "CELONIS",
+            "text": "CELONIS"
+        },
+        {
+            "key": "SAP",
+            "text": "SAP"
+        },
+        {
+            "key": "SAP_G2C",
+            "text": "SAP_G2C"
+        },
+        {
+            "key": "SSFF",
+            "text": "SSFF"
+        },
+        {
+            "key": "BMC",
+            "text": "BMC"
+        },
+        {
+            "key": "Otros",
+            "text": "Otros"
+        }
+
+    ],
+
+    "clienteFuncional":[
+        {
+            "key": " ",
+            "text": " "
+        }, {
+            "key": "Sí, en TGT",
+            "text": "Sí, en TGT"
+        }, {
+            "key": "Sí, en Vertical",
+            "text": "Sí, en Vertical"
+        }, {
+            "key": "No",
+            "text": "No"
+        }
+    ],
+
+
+    "tipoIniciativa":[
+        {
+            "key": " ",
+            "text": " "
+        }, {
+            "key": "Proyecto/Servicio de Inversión",
+            "text": "Proyecto/Servicio de Inversión"
+        }, {
+            "key": "Proyecto/Servicio Interno PdV",
+            "text": "Proyecto/Servicio Interno PdV"
+        }, 
+        {
+            "key": "Proyecto/Servicio a Cliente Externo",
+            "text": "Proyecto/Servicio a Cliente Externo"
+        },
+        {
+            "key": "Opex Servicios",
+            "text": "Opex Servicios"
+        }
+    ],
+
+    "naturaleza":[
+        {
+            "key": " ",
+            "text": " "
+        }, {
+            "key": "CAPEX",
+            "text": "CAPEX"
+        }, {
+            "key": "OPEX",
+            "text": "OPEX"
+        }, 
+        {
+            "key": "Proyecto/Servicio a Cliente Externo",
+            "text": "Proyecto/Servicio a Cliente Externo"
+        },
+        {
+            "key": "Opex Servicios",
+            "text": "Opex Servicios"
+        }
+    ],
+    "seguimiento":[
+        {
+            "key": " ",
+            "text": " "
+        }, 
+        {
+            "key": "Agile",
+            "text": "Agile"
+        }, 
+        {
+            "key": "Mixto",
+            "text": "Mixto"
+        }, 
+        {
+            "key": "Waterfall",
+            "text": "Waterfall"
+        },
+        {
+            "key": "Sin Seguimiento",
+            "text": "Sin Seguimiento"
+        },
+        {
+            "key": "Servicio",
+            "text": "Servicio"
+        }
+
+    ],
+
+    "EjecucionViaNewMo":[
+        {
+            "key": " ",
+            "text": " "
+        }, 
+        {
+            "key": "Si",
+            "text": "Si"
+        }, 
+        {
+            "key": "No",
+            "text": "No"
+        }, 
+        {
+            "key": "Mixto",
+            "text": "Mixto"
+        }
+
+
+    ], 
+
+    "AMreceptor":[
+        {
+            "key": " ",
+            "text": " "
+        }, 
+        {
+            "key": "No Aplica",
+            "text": "No Aplica"
+        }, 
+        {
+            "key": "AM TSA",
+            "text": "AM TSA"
+        }, 
+        {
+            "key": "AM BI",
+            "text": "AM BI"
+        },
+        {
+            "key": "COE Salesforce",
+            "text": "COE Salesforce"
+        },
+        {
+            "key": "RoD",
+            "text": "RoD"
+        },
+        {
+            "key": "Telesap",
+            "text": "Telesap"
+        },
+        {
+            "key": "Vicky",
+            "text": "Vicky"
+        },
+        {
+            "key": "GlobalSAP / AM TSA",
+            "text": "GlobalSAP / AM TSA"
+        },
+        {
+            "key": "Otros",
+            "text": "Otros"
+        }
+        
+
+    ]
+    
+}

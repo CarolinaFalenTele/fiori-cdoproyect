@@ -1,0 +1,39 @@
+{
+  "dates": [
+      {
+          "hito": "Kick off",
+          "fechaInicio": "2024-01-01",
+          "fechaFin": "2024-01-02"
+      },
+      {
+          "hito": "Diseño",
+          "fechaInicio": "2024-02-01",
+          "fechaFin": "2024-02-28"
+      },
+      {
+          "hito": "Construcción",
+          "fechaInicio": "2024-03-01",
+          "fechaFin": "2024-04-30"
+      },
+      {
+          "hito": "Pruebas TQ",
+          "fechaInicio": "2024-05-01",
+          "fechaFin": "2024-05-31"
+      },
+      {
+          "hito": "Go live",
+          "fechaInicio": "2024-06-01",
+          "fechaFin": "2024-06-02"
+      },
+      {
+          "hito": "Paso AM",
+          "fechaInicio": "2024-06-03",
+          "fechaFin": "2024-06-04"
+      },
+      {
+          "hito": "Server post/prod",
+          "fechaInicio": "2024-06-05",
+          "fechaFin": "2024-06-06"
+      }
+  ]
+}
