@@ -19,7 +19,7 @@
                     <Label text="Nombre" id="label"/>
                     <Text text="Nombre iniciativa" id="txt_rellena" />
 
-                    <Label text="Area" id="label2"/>
+                    <Label text="Area" id="label23"/>
                     <Text text="El area que presenta la necesidad" id="txt"/>
                 </FlexBox>
 
