@@ -10,19 +10,28 @@
             <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Telef%C3%B3nica_2021_logo.svg/1200px-Telef%C3%B3nica_2021_logo.svg.png" width="120px" id="image0" class="sapUiTinyMargin"/>
         </HBox>
 
-        <f:SimpleForm id="idInfoForm" maxContainerCols="2" editable="true" layout="ResponsiveGridLayout" title="Informacion CDO" labelSpanL="2" labelSpanM="2"  columnsL="1" columnsM="1" class="editableFForm">
+        <f:SimpleForm id="idInfoForm" maxContainerCols="2" editable="true" layout="ResponsiveGridLayout" title="Informacion CDO" labelSpanL="2" labelSpanM="2" columnsL="1" columnsM="1" class="editableFForm">
 
             <f:content>
                 <core:Title id="titulo" text="Identificacion de la solicitud "/>
+                <Image src="./img/fotodatos.png" width="600px" height="50px" id="imae0" />
+                <Label text="Nombre" id="label"/>
+                <Text text="Nombre iniciativa" id="txt_rellena" />
 
-                <FlexBox width="100%" id="box0_171447653238">
-                    <Label text="Nombre" id="label"/>
-                    <Text text="Nombre iniciativa" id="txt_rellena" />
+                <Label text="Area" id="label23"/>
+                <Text text="El area que presenta la necesidad" id="txt"/>
 
-                    <Label text="Area" id="label23"/>
-                    <Text text="El area que presenta la necesidad" id="txt"/>
-                </FlexBox>
+                <Label text="Jefe de Proyecto" id="label2"/>
+                <Text text="Jefe de Proyecto asignado a la solicitud" id="txrt"/>
 
+                <Label text="Vertical" id="label234"/>
+                <Text text=" la Vertical principal de la iniciativa, si tiene carácter Plurianual" id="txrt444"/> 
+
+                <Label text="Jefe de Proyecto" id="label293"/>
+                <Text text="" id="txrt44"/> 
+
+
+                   
                 <Toolbar id="pie_pag" class="myCustomBar">
                     <ToolbarSpacer id="tol"/>
                     <Button text="Entendido" id="clear" press="onClearAllData"/>

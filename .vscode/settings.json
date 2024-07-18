@@ -1,5 +1,8 @@
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "files.trimTrailingWhitespaceInRegexAndStrings": true
+  "files.trimTrailingWhitespaceInRegexAndStrings": true,
+  "[xml]": {
+    "editor.defaultFormatter": "SAPSE.sap-ux-annotation-modeler-extension"
+  }
 }

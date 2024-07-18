@@ -45,5 +45,17 @@
     {
       "texto": "IDENTIFICACIÓN DE LA SOLICITUD&#10;Introducir el Nombre de la iniciativa, el area que presenta la necesidad,&#10; el nombre del Jefe de Proyecto asignado a la solicitud la Vertical principal de la iniciativa, si tiene carácter Plurianual,&#10; el Tipo de Iniciativa presentada, la Naturaleza de la misma (OPEX/CAPEX),&#10; el Tipo de Seguimiento que se le va a hacer y,&#10; en el caso de proyectos externos,\nel Cliente Funcional y Cliente de Facturación&#10;(En caso de que exista más de una jurídica marcar el checkbox de 'Multi jurídica' y&#10;completar la información en la tabla que aparecerá a partir de la celda C39, en caso\ncontrario indicar la jurídica &#10;en el campo contiguo 'Cliente Facturación').&#10;Para iniciativas GlobalSAP es necesario indicar si se va a realizar la Ejecución\nVía Nuevo Modelo Delivery (están disponibles las opciones SI/NO/Mixto)&#10;así como el AM receptor si aplica.\nEl Cambio EUR-USD se utilizará en caso de querer obtener el total de la oferta en $,&#10;para lo que se consultará a Control el tipo de cambio vigente en el momento de la&#10;realización de la ficha. En los proyectos plurianuales se considera un incremento del IPC&#10;del 2,5% para Recursos Internos a partir del segundo año, para Recursos Externos el responsable de la cotización tiene que considerar si es necesario incrementar la tarifa en cada uno de los años sucesivos.&#10;Se completará por la PMO el campo Código una vez que la solicitud se ha aprobado y el&#10;proyecto se ha constituido, además del campo Cliente Nuevo, para indicar si es una oferta\npara Cliente Nuevo entre los valores predefinidos &#10;(Sí, en TGT, Sí, en Vertical, No)."
     }
+  ],
+
+  "listaCdo": [
+    {
+      "fecha": "30-jun-24",
+      "Codigo": "P1342",
+      "NombreProyec": "Nueva sociedad Netco Colombia Global SAP",
+      "Descripcion": "Fuel – GSAPR3 - Fase II CR ( ID I080C ) PO Wave Overdelivery Tolerance",
+      "Area": "Finanzas y Supply Chain",
+      "Jefe Proyecto": "Edgar Andrés Osorio Arévalo",
+      "Estado": "Aprobado"
+    }
   ]
 }

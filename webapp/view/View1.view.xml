@@ -1,10 +1,11 @@
-<mvc:View xmlns:table="sap.ui.table" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:chart="sap.chart" xmlns:l="sap.ui.layout" xmlns:smartChart="sap.ui.comp.smartchart" xmlns:viz="sap.viz.ui5.controls" xmlns:viz.data="sap.viz.ui5.data" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" controllerName="solicitudproyect.controller.View1" displayBlock="true">
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml"  xmlns:table="sap.ui.table" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:chart="sap.chart" xmlns:l="sap.ui.layout" xmlns:smartChart="sap.ui.comp.smartchart" xmlns:viz="sap.viz.ui5.controls" xmlns:viz.data="sap.viz.ui5.data" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" controllerName="solicitudproyect.controller.View1" displayBlock="true">
 
 <App id="app0">
     <pages><Page id="page0" title="{i18n>appTitle}" class="miClase">
             <customHeader>
             <Bar xmlns="sap.m" class="sapContrastPlus myCustomBar" id="bar0" busyIndicatorSize="Large" design="Header">
                     <contentLeft>
+                       <Button icon="sap-icon://arrow-left" tooltip="" id="button3" press="onNavToView1"/>
                         <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Telef%C3%B3nica_2021_logo.svg/1200px-Telef%C3%B3nica_2021_logo.svg.png" width="120px" id="image0"/>
                     </contentLeft>
                 </Bar>

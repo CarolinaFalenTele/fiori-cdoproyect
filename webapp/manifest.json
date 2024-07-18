@@ -2,27 +2,30 @@
   "_version": "1.59.0",
   "sap.app": {
     "dataSources": {
-      
-    "ubicaciones": { 
-        "uri": "model/data.json", 
-        "type": "JSON" 
+      "ubicaciones": {
+        "uri": "model/data.json",
+        "type": "JSON"
+      },
+      "Area": {
+        "uri": "model/selectData.json",
+        "type": "JSON"
+      },
+      "ChartData": {
+        "uri": "model/smartData.json",
+        "type": "JSON"
+      },
+      "listaCdo": {
+        "uri": "model/data.json",
+        "type": "JSON"
+      }
     },
-    "Area": { 
-      "uri": "model/selectData.json", 
-      "type": "JSON" 
-  },
-  "ChartData": { 
-    "uri": "model/smartData.json", 
-    "type": "JSON" 
-}
-  },
     "id": "solicitudproyect",
     "type": "application",
-    "i18n":{
-			"bundleUrl": "i18n/i18n.properties",
-			"supportedLocales": ["en", "es"],
-			"fallbackLocale": "es"
-		},
+    "i18n": {
+      "bundleUrl": "i18n/i18n.properties",
+      "supportedLocales": ["en", "es"],
+      "fallbackLocale": "es"
+    },
     "applicationVersion": {
       "version": "0.0.1"
     },
@@ -65,7 +68,6 @@
     }
   },
   "sap.ui5": {
-
     "flexEnabled": true,
     "dependencies": {
       "minUI5Version": "1.123.1",
@@ -83,7 +85,9 @@
           "lazy": true
         }
       }
+  
     },
+    "preload": "auto",
     "contentDensities": {
       "compact": true,
       "cozy": true
@@ -94,32 +98,35 @@
         "settings": {
           "bundleName": "solicitudproyect.i18n.i18n",
           "supportedLocales": ["en", "es"],
-					"fallbackLocale": "es"
+          "fallbackLocale": "es"
         }
       },
-      "ModeloUbicaciones": { 
-        "dataSource": "ubicaciones", 
-        "type": "sap.ui.model.json.JSONModel", 
-        "preload": true 
+      "ModeloUbicaciones": {
+        "dataSource": "ubicaciones",
+        "type": "sap.ui.model.json.JSONModel",
+        "preload": true
       },
-      "ModeloSelect": { 
-        "dataSource": "Area", 
-        "type": "sap.ui.model.json.JSONModel", 
-        "preload": true 
+      "ModeloSelect": {
+        "dataSource": "Area",
+        "type": "sap.ui.model.json.JSONModel",
+        "preload": true
       },
-      "smartDatos": { 
-        "dataSource": "ChartData", 
-        "type": "sap.ui.model.json.JSONModel", 
-        "preload": true 
+      "smartDatos": {
+        "dataSource": "ChartData",
+        "type": "sap.ui.model.json.JSONModel",
+        "preload": true
+      },
+      "ListaCdo": {
+        "dataSource": "listaCdo",
+        "type": "sap.ui.model.json.JSONModel",
+        "preload": true
       }
-
     },
-    
-    
+
     "products": {
       "type": "sap.ui.model.json.JSONModel",
       "settings": {}
-  },
+    },
     "resources": {
       "css": [
         {
@@ -139,19 +146,29 @@
       },
       "routes": [
         {
-          "name": "RouteView1",
-          "pattern": ":?query:",
-          "target": [
-            "TargetView1"
-          ]
+          "name": "app",
+          "pattern": " ",
+          "target": "app"
+        },
+        {
+          "name": "view",
+          "pattern": "view",
+          "target": "view"
         }
       ],
       "targets": {
-        "TargetView1": {
+        "app": {
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
-          "viewId": "View1",
+          "viewId": "app",
+          "viewName": "App"
+        },
+        "view": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "view",
           "viewName": "View1"
         }
       }
@@ -162,11 +179,5 @@
       "async": true,
       "id": "App"
     }
-
   }
-
 }
-  
-  
-  
-
